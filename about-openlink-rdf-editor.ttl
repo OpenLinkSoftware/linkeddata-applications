@@ -1,0 +1,52 @@
+
+## Description of the OpenLink Structured Data Editor (OSDE) ##
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix webservice: <http://www.openlinksw.com/ontology/webservices#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix osde: <http://sde.openlinksw.com/#> . 
+
+osde:RDFEditorApplication rdf:type schema:SoftwareApplication .
+osde:RDFEditorApplication schema:author <http://www.openlinksw.com/#this> .
+osde:RDFEditorApplication schema:description "Open Standards based Editor for Creating and Editing RDF Language Sentences/Statements. Once deployed, from desktop or cloud location, this application provides a \"deceptively simple\" mechanism for creating and deploying structured data using RDF Language sentences/statements that can be saved to a variety of storage locations using various HTTP-based protocols (WebDAV, LDP, SPARQL 1.1 INSERT, SPARQL Graph Protocol)."@en .
+osde:RDFEditorApplication schema:mainEntityOfPage <http://linkeddata.uriburner.com/rdf-editor/> .
+osde:RDFEditorApplication schema:mainEntityOfPage osde:this .
+osde:RDFEditorApplication schema:mainEntityOfPage <https://github.com/openlink/rdf-editor#this> .
+osde:RDFEditorApplication schema:mainEntityOfPage <https://youtu.be/ftLDf9NHmU0#this> .
+osde:RDFEditorApplication schema:mainEntityOfPage <https://youtu.be/umrrhFk4W7g#this> .
+osde:RDFEditorApplication schema:mainEntityOfPage <https://youtu.be/vmIqGKw3VeY#this> .
+osde:RDFEditorApplication schema:name "OpenLink RDF Language Statement Editor"@en .
+osde:RDFEditorApplication schema:publisher <http://www.openlinksw.com/#this> .
+osde:defaultStatementSubject rdf:type webservice:Parameter .
+osde:defaultStatementSubject schema:description "Parameter that determines default subject of initial RDF Language statement presented to user by the statement editor."@en .
+osde:defaultStatementSubject schema:mainEntityOfPage osde:this .
+osde:defaultStatementSubject schema:name "defaultStatementSubject"@en .
+osde:defaultStatementSubject webservice:uriParameterName "&statement:subject" .
+osde:defaultStatementSubject webservice:uriParameterValue "URI that identifies the subject of the default RDF Language Statement.                                           "@en .
+osde:newDocumentState rdf:type webservice:Parameter .
+osde:newDocumentState schema:description "Parameter that determines default document state in regards to editor content."@en .
+osde:newDocumentState schema:mainEntityOfPage osde:this .
+osde:newDocumentState schema:name "newDocumentState"@en .
+osde:newDocumentState webservice:uriParameterName "&newDocument" .
+osde:newDocumentState webservice:uriParameterValue "Boolean Values: \"true\" or \"false\"."@en .
+osde:this rdf:type schema:CreativeWork .
+osde:this rdf:type schema:WebPage .
+osde:this schema:about osde:EditingAction .
+osde:this schema:about osde:product .
+osde:this schema:author <http://www.openlinksw.com/#this> .
+osde:this schema:dateCreated "2016-03-18T15:11:57-04:00"^^xsd:dateTime .
+osde:this schema:dateModified "2016-03-18T15:12:06-04:00"^^xsd:dateTime .
+osde:this schema:datePublished "2016-03-18T15:11:57-04:00"^^xsd:dateTime .
+osde:this schema:mainEntity osde:product .
+osde:this schema:name "RDF Statement Editor Service Description"@en .
+osde:this schema:publisher <http://www.openlinksw.com/#this> .
+osde:viewSelection rdf:type webservice:Parameter .
+osde:viewSelection schema:description "Parameter that determines default editor view."@en .
+osde:viewSelection schema:mainEntityOfPage osde:this .
+osde:viewSelection schema:name "viewSelection"@en .
+osde:viewSelection webservice:uriParameterName "&view" .
+osde:viewSelection webservice:uriParameterValue "One of \"statements\", \"entities\", \"attributes\", or \"values\", if using EAV terminology. For RDF terminology, it's one of \"statements\", \"subjects\", \"predicates\", or \"objects\".                                           "@en .
+
+
+
