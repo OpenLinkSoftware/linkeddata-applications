@@ -1,0 +1,20 @@
+## Description of the URIBurner site and service ##
+
+@prefix          rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix       schema:  <http://schema.org/> .
+@prefix   webservice:  <http://www.openlinksw.com/ontology/webservices#> .
+@prefix          xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix    uriburner:  <http://uriburner.com/#> . 
+
+uriburner:this   rdf:type               schema:CreativeWork .
+uriburner:this   rdf:type               schema:WebPage .
+uriburner:this   schema:about           uriburner:product .
+uriburner:this   schema:author          <http://www.openlinksw.com/#this> .
+uriburner:this   schema:dateCreated     "2009-05-25T10:00:34-04:00"^^xsd:dateTime .
+uriburner:this   schema:dateModified    "2018-11-27T15:30:00-04:00"^^xsd:dateTime .
+uriburner:this   schema:datePublished   "2009-05-25T10:00:34-04:00"^^xsd:dateTime .
+uriburner:this   schema:mainEntity      uriburner:product .
+uriburner:this   schema:name            "URIBurner Data Virtualization Service Description"@en .
+uriburner:this   schema:publisher       <http://www.openlinksw.com/#this> .
+
