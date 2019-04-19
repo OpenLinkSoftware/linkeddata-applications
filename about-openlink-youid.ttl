@@ -34,7 +34,7 @@ youid:product
                              schema:WebPage , 
                              schema:TechArticle ;
     schema:mainEntity        youid:product ;
-    schema:name              "OpenLink YouID"@en ;
+    schema:name              "Verifiable Identity controlled by You, at Web-Scale"@en ;
     schema:description       """Blog Post that introduces the features and benefits of WebID, enahnced by the 
                                 YouID Browser Extension
                              """@en ;
@@ -62,7 +62,7 @@ youid:product
                              schema:WebPage , 
                              schema:TechArticle ;
     schema:mainEntity        youid:product ;
-    schema:name              "OpenLink YouID"@en ;
+    schema:name              "A Simple Usage Exercise with the YouID Browser Extension"@en ;
     schema:description       """Blog Post that provides a simple demonstration of the YouID Browser Extension
                              """@en ;
     schema:keywords          "LinkedData"@en , 
