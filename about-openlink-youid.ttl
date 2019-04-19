@@ -1,0 +1,85 @@
+## About OpenLink YouID ##
+   
+@prefix schema: <http://schema.org/> .
+@prefix   osds: <http://osds.openlinksw.com/#> . 
+
+<http://youid.openlinksw.com/index.html>
+    a                        schema:WebPage ;
+    schema:name              "OpenLink YouID Web Site Index Page"@en;
+    schema:mainEntity        osds:product ;
+    schema:author            <http://www.openlinksw.com/dataspace/organization/openlink#this> .
+
+osds:product
+    a                        schema:SoftwareApplication ;
+    schema:name              "OpenLink YouID"@en;
+    schema:genre             "Browser Extension"@en ;
+    schema:keywords          "WebID"@en , 
+                             "Identity"@en , 
+                             "LinkedData"@en , 
+                             "Linked Data"@en , 
+                             "Semantic Web"@en , 
+                             "SEO"@en , 
+                             "Search"@en , 
+                             "Big Data"@en , 
+                             "Open Data"@en , 
+                             "Browser Extension"@en ;
+#    schema:workExample       <https://www.pinterest.com/kidehen/schemaorg-related/> ;
+    schema:mainEntityOfPage  <https://medium.com/openlink-software-blog/simple-youid-browser-extension-usage-exercise-57fa3ff6c6b7> , 
+	                           <https://medium.com/openlink-software-blog/verifiable-identity-controlled-by-you-at-web-scale-3d66399cb114> ,
+                             <https://chrome.google.com/webstore/detail/openlink-youid/kbepkemknbihgdmdnfainhmiidoblhee> ,
+                             <https://addons.mozilla.org/en-US/firefox/addon/openlink-youid-ff/>.
+						  
+<https://medium.com/openlink-software-blog/verifiable-identity-controlled-by-you-at-web-scale-3d66399cb114>
+    a                        schema:BlogPosting , 
+                             schema:WebPage , 
+                             schema:TechArticle ;
+    schema:mainEntity        osds:product ;
+    schema:name              "OpenLink YouID"@en ;
+    schema:description       """Blog Post that introduces the features and benefits of WebID, enahnced by the 
+                                YouID Browser Extension
+                             """@en ;
+    schema:keywords          "LinkedData"@en , 
+                             "Linked Data"@en , 
+                             "Semantic Web"@en , 
+                             "SEO"@en , 
+                             "Search"@en , 
+                             "Big Data"@en , 
+                             "Open Data"@en , 
+                             "Browser Extension"@en ;
+    schema:author           <http://kingsley.idehen.net/dataspace/person/kidehen#this> ;
+    schema:about            <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData> ,
+                            <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb> ,
+                            <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#WebID> ,
+                            <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#Identity> ,
+                            <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF> ,
+                            <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#OpenData> ;
+    schema:mentions         <http://dbpedia.org/resource/Google_Chrome> , 
+                            <http://dbpedia.org/resource/Firefox> ,
+                            <http://dbpedia.org/resource/Opera_(web_browser)> .
+
+<https://medium.com/openlink-software-blog/simple-youid-browser-extension-usage-exercise-57fa3ff6c6b7>
+    a                        schema:BlogPosting , 
+                             schema:WebPage , 
+                             schema:TechArticle ;
+    schema:mainEntity        osds:product ;
+    schema:name              "OpenLink YouID"@en ;
+    schema:description       """Blog Post that provides a simple demonstration of the YouID Browser Extension
+                             """@en ;
+    schema:keywords          "LinkedData"@en , 
+                             "Linked Data"@en , 
+                             "Semantic Web"@en , 
+                             "SEO"@en , 
+                             "Search"@en , 
+                             "Big Data"@en , 
+                             "Open Data"@en , 
+                             "Browser Extension"@en ;
+    schema:author           <http://kingsley.idehen.net/dataspace/person/kidehen#this> ;
+    schema:about            <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData> ,
+                            <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb> ,
+                            <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#WebID> ,
+                            <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#Identity> ,
+                            <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF> ,
+                            <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#OpenData> ;
+    schema:mentions         <http://dbpedia.org/resource/Google_Chrome> , 
+                            <http://dbpedia.org/resource/Firefox> ,
+                            <http://dbpedia.org/resource/Opera_(web_browser)> .
