@@ -1,0 +1,49 @@
+## About the OpenLink Data Explorer ##
+   
+@prefix schema: <http://schema.org/> .
+@prefix    ode: <http://ode.openlinksw.com/#> . 
+
+<http://ode.openlinksw.com/index.html>
+    a                        schema:WebPage ;
+    schema:name              "OpenLink Data Explorer Site Index Page"@en;
+    schema:mainEntity        ode:product ;
+    schema:author            <http://www.openlinksw.com/dataspace/organization/openlink#this> .
+
+ode:product
+    a                        schema:SoftwareApplication ;
+    schema:name              "OpenLink Data Explorer"@en;
+    schema:genre             "Browser Extension"@en ;
+    schema:keywords          "LinkedData"@en , 
+                             "Linked Data"@en , 
+                             "Semantic Web"@en , 
+                             "SEO"@en , 
+                             "Search"@en , 
+                             "Big Data"@en , 
+                             "Open Data"@en , 
+                             "Browser Extension"@en ;
+    schema:workExample       <https://www.pinterest.com/kidehen/schemaorg-related/> ;
+    schema:mainEntityOfPage  <https://www.w3.org/wiki/OpenLinkDataExplorer> , 
+                             <https://chrome.google.com/webstore/detail/openlink-data-explorer/ebdjmjgokgjakdpigpmilfebpnfaibeb>.
+						  
+<https://www.w3.org/wiki/OpenLinkDataExplorer>
+    a                        schema:WebPage , 
+                             schema:TechArticle ;
+    schema:mainEntity        ode:product ;
+    schema:name              "OpenLink Data Explorer"@en ;
+    schema:description       """Capsule description of ODE"""@en ;
+    schema:keywords          "LinkedData"@en , 
+                             "Linked Data"@en , 
+                             "Semantic Web"@en , 
+                             "SEO"@en , 
+                             "Search"@en , 
+                             "Big Data"@en , 
+                             "Open Data"@en , 
+                             "Browser Extension"@en ;
+    schema:author            <http://kingsley.idehen.net/dataspace/person/kidehen#this> ;
+    schema:about             <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData> ,
+                             <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb> ,
+                             <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF> ,
+                             <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#OpenData> ;
+    schema:mentions          <http://dbpedia.org/resource/Google_Chrome> , 
+                             <http://dbpedia.org/resource/Firefox> ,
+                             <http://dbpedia.org/resource/Opera_(web_browser)> .
