@@ -1,0 +1,99 @@
+@prefix dbpedia-yago: <http://dbpedia.org/class/yago/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix iri: <http://data.openlinksw.com/oplweb/glossary-term/IRI#> .
+@prefix uri: <http://data.openlinksw.com/oplweb/glossary-term/URI#> .
+@prefix tuple: <http://data.openlinksw.com/oplweb/glossary-term/Tuple#> .
+@prefix odbc: <http://data.openlinksw.com/oplweb/glossary-term/OpenDatabaseConnectivity#> .
+@prefix jdbc: <http://data.openlinksw.com/oplweb/glossary-term/OpenDatabaseConnectivity#> .
+@prefix tables: <http://data.openlinksw.com/oplweb/glossary-term/SQLRelation#> .
+@prefix sparql-protocol: <http://data.openlinksw.com/oplweb/glossary-term/SPARQLProtocol#> .
+@prefix rdf-graphs: <http://data.openlinksw.com/oplweb/glossary-term/RDFRelation#> .
+@prefix rdf-turtle: <http://data.openlinksw.com/oplweb/glossary-term/Turtle#> .
+@prefix rdf-ntriples: <http://data.openlinksw.com/oplweb/glossary-term/NTriples#> .
+@prefix rdf-xml: <http://data.openlinksw.com/oplweb/glossary-term/RDFXML#> .
+@prefix json-ld: <http://data.openlinksw.com/oplweb/glossary-term/JSONLD#> .  
+@prefix html-microdata: <http://data.openlinksw.com/oplweb/glossary-term/Microdata#> .
+@prefix xhtml-rdfa: <http://data.openlinksw.com/oplweb/glossary-term/RDFa#> .
+@prefix csv: <http://data.openlinksw.com/oplweb/glossary-term/CSV#> . 
+@prefix sql-ddl: <http://data.openlinksw.com/oplweb/glossary-term/SQL#> . 
+@prefix rdf-ddl: <http://data.openlinksw.com/oplweb/glossary-term/RDF#> .
+@prefix owl-ddl: <http://data.openlinksw.com/oplweb/glossary-term/OWL#> .
+@prefix spin-lang: <http://data.openlinksw.com/oplweb/glossary-term/SPINRulesVocab#> . 
+@prefix rbac: <http://data.openlinksw.com/oplweb/glossary-term/RBAC#> .
+@prefix abac: <http://data.openlinksw.com/oplweb/glossary-term/ABAC#> .
+@prefix rdf-schema: <http://data.openlinksw.com/oplweb/glossary-term/RDFSchema#> .
+@prefix sparql: <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#> .
+@prefix lubm: <http://swat.cse.lehigh.edu/projects/lubm/> . 
+@prefix bsbm: <http://wifo5-03.informatik.uni-mannheim.de/bizer/berlinsparqlbenchmark/> .
+@prefix hobbit-fct: <https://github.com/hobbit-project/faceted-benchmark#> .
+@prefix ldbc: <http://ldbcouncil.org/> . 
+@prefix ldbc-spb: <http://ldbcouncil.org/benchmarks/spb#> .
+@prefix tpca: <http://www.tpc.org/tpca/default.asp#> .
+@prefix tpcc: <http://www.tpc.org/tpcc/default.asp#> .
+@prefix tpch: <http://www.tpc.org/tpch/default.asp#> .
+@prefix cc:      <http://creativecommons.org/ns#> .
+# @prefix dbms-ontology: <http://www.openlinksw.com/ontology/dbms#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix schema: <http://schema.org/> .
+@prefix xhv: <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix dcterms: <http://purl.org/dc/terms/> . 
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> . 
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix database: <http://data.openlinksw.com/oplweb/glossary-term/Database#> .
+@prefix rdf-relation: <http://data.openlinksw.com/oplweb/glossary-term/RDFRelation#> .
+@prefix sql-relation: <http://data.openlinksw.com/oplweb/glossary-term/SQLRelation#> .
+@prefix virtuoso: <http://data.openlinksw.com/oplweb/product/Virtuoso#> .
+# @prefix source:      <http://www.openlinksw.com/data/turtle/dbms-app-ontology.ttl> .
+@prefix source:      <http://www.openlinksw.com/data/turtle/database-applications.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/data/turtle/database-applications.ttl> .
+@prefix dbms-ontology: <http://www.openlinksw.com/ontology/dbms-app-ontology#> .
+@prefix : <http://www.openlinksw.com/ontology/dbms-app-ontology#> .
+
+sourceDAV:
+    a schema:CreativeWork ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+    cc:attributionName "OpenLink Software" ;
+    cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+    schema:datePublished "2019-04-18T13:00:00-05:00"^^xsd:dateTime ;
+    schema:dateCreated "2019-04-17T13:00:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2019-04-22T15:00:00-05:00"^^xsd:dateTime ;
+    schema:name  """OpenLink Database Management Systems Description Document """ ;
+    schema:description  """Document that describes a Database Management System (DBMS) using terms from
+						   the OpenLink Database Ontology.  
+						 """^^xsd:string ;
+    schema:keywords  """ODBC, ODBC Driver, JDBC, JDBC Driver, ADO.NET, ADO.NET Provider, OLE-DB, OLE-DB Provider, 
+						UDA, Data Access, Data Access Driver, Data Access Middleware, Database, Database Management System, 
+						DBMS, Relational Database Management System, RDBMS, Resource Description Framework, RDF, Relation,
+						NoSQL, SQL, SPARQL.
+		 			 """;
+	schema:mainEnity : ;
+	schema:mentions :supportsIdentifierType, :identifierQuoteChar, :dataAccessControl, :transactionSemantics, 
+					:dataAccessAPI, :declarativeReasoningLang, :declarativeDataManipulationLang, :declarativeDataManipulationLang,
+					:declarativeDataDefinitionLang, :tupleNotation ;
+	schema:about virtuoso:this ;
+    owl:sameAs source: .
+	
+	
+## Instances (or Individuals)
+## Virtuoso RDBMS 
+
+virtuoso:this 
+a :DatabaseManagementSystem  ;
+:supportsIdentifierType dbpedia:Uniform_Resource_Identifier ;
+:identifierQuoteChar "Double-quotes" ;
+:dataAccessControl dbpedia:Attribute-Based_Access_Control, dbpedia:Role-based_access_control ;
+:transactionSemantics dbpedia:ACID ;
+:dataAccessAPI dbpedia:Open_Database_Connectivity, dbpedia:Java_Database_Connectivity, dbpedia:ActiveX_Data_Objects ;
+:declarativeReasoningLang dbpedia:SQL, dbpedia:SPARQL ;
+:declarativeDataManipulationLang dbpedia:SQL, dbpedia:SPARQL ;
+:declarativeDataDefinitionLang dbpedia:SQL, dbpedia:SPARQL, dbpedia:Resource_Description_Framework ;
+:tupleNotation <http://dbpedia.org/resource/Turtle_(syntax)>, <http://dbpedia.org/resource/N-Triples>,
+			   <http://dbpedia.org/resource/RDF/XML>, <http://dbpedia.org/resource/JSON-LD>,
+			   <http://dbpedia.org/resource/Comma-separated_values> ;
+:relationsModeledAs dbpedia:Tuple, rdf-relation:this, sql-relation:this ;
+:relationPartitioning database:this ;
+:benchmarkStandards lubm:this, bsbm:this, hobbit-fct:this, ldbc:this, ldbc-spb:this, tpca:this, tpcc:this,
+			 		tpch:this .
