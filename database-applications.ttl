@@ -45,6 +45,7 @@
 @prefix rdf-relation: <http://data.openlinksw.com/oplweb/glossary-term/RDFRelation#> .
 @prefix sql-relation: <http://data.openlinksw.com/oplweb/glossary-term/SQLRelation#> .
 @prefix virtuoso: <http://data.openlinksw.com/oplweb/product/Virtuoso#> .
+@prefix virtuoso-db: <http://www.openlinksw.com/data/turtle/database-applications/#> . 
 # @prefix source:      <http://www.openlinksw.com/data/turtle/dbms-app-ontology.ttl> .
 @prefix source:      <http://www.openlinksw.com/data/turtle/database-applications.ttl> .
 @prefix sourceDAV:   <http://www.openlinksw.com/DAV/data/turtle/database-applications.ttl> .
@@ -82,6 +83,7 @@ sourceDAV:
 
 virtuoso:this 
 a :DatabaseManagementSystem  ;
+owl:sameAs virtuoso-db:006d03d8a44e869801eeee1790e2bc24 ;
 :supportsIdentifierType dbpedia:Uniform_Resource_Identifier ;
 :identifierQuoteChar "Double-quotes" ;
 :dataAccessControl dbpedia:Attribute-Based_Access_Control, dbpedia:Role-based_access_control ;
